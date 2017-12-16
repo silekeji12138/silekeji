@@ -1,9 +1,13 @@
 <?php
 namespace backend\controllers;
 
+use backend\models\Action;
 use backend\models\Admin;
 use backend\models\AdminForm;
 use backend\models\EditForm;
+use backend\models\PasswordForm;
+use backend\models\WebSet;
+use yii\filters\AccessControl;
 use yii\helpers\Url;
 use yii\web\Controller;
 
@@ -35,6 +39,10 @@ class IndexController extends Controller {
     }
     //管理员列表界面
     public function actionList(){
+        if (\Yii::$app->user->isGuest){
+            \Yii::$app->session->setFlash('error','请先登录');
+            return $this->redirect(Url::to(['index/login']));
+        }
         $model=Admin::find()->all();
         return $this->render('list',compact('model'));
     }
@@ -81,9 +89,46 @@ class IndexController extends Controller {
         }
         return $this->render('editadmin',compact('model'));
     }
-
-    public function text(){
-        $admin=\Yii::$app->user->identity;
-        echo 111;
+    //查看管理员详细信息
+    public function actionCheckAdmin($id){
+        $model=Admin::findOne($id);
+        return $this->render('checkadmin',compact('model'));
     }
+    //网站设置
+    public function actionWebSet(){
+        $model=WebSet::findOne(1);
+        $request=\Yii::$app->request;
+        if ($request->isPost){
+            $model->load($request->post());
+            if ($model->validate()){
+                $model->save();
+                \Yii::$app->session->setFlash('success','修改成功');
+                return $this->redirect(Url::to(['index/web-set']));
+            }
+        }
+        return $this->render('webset',compact('model'));
+    }
+    //修改密码
+    public function actionEditPassword($id){
+        $model=new PasswordForm();
+        $request=\Yii::$app->request;
+        if ($request->isPost){
+            $admin=\Yii::$app->user->identity;
+            $model=PasswordForm::findOne($id);
+            $model->load($request->post());
+            if ($model->validate()){
+                $model->password=md5($model->password);
+                $model->save();
+                \Yii::$app->session->setFlash('success','修改成功');
+                return $this->redirect(Url::to(['index/list']));
+            }
+        }
+        return $this->render('edit-password',compact('model'));
+    }
+    //活动设置
+
+
+
+
+
 }

@@ -18,12 +18,13 @@ class EditForm extends ActiveRecord {
     public function rules()
     {
         return[
-            ['username','unique', 'message' => '账号不能重复'],
+            [['name','email','really_name','username'],'required'],
             ['email','match','pattern'=>'/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/','message'=>'邮箱格式不正确'],
             ['email', 'unique','message'=>'{attribute}已经被占用了'],
             [['qq','address','status','sex','role_id','mobile'],'safe'],
             ['mobile','unique', 'message' => '电话不能重复'],
-            [['name','email','really_name','user'],'required'],
+            ['username','unique', 'message' => '账号不能重复'],
+
         ];
     }
 
