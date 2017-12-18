@@ -1,6 +1,7 @@
 <?php
 namespace backend\controllers;
 
+use backend\filters\YiiFilter;
 use backend\models\Action;
 use backend\models\Admin;
 use backend\models\AdminForm;
@@ -10,6 +11,8 @@ use backend\models\WebSet;
 use yii\filters\AccessControl;
 use yii\helpers\Url;
 use yii\web\Controller;
+use PHPExcel;
+
 
 
 class IndexController extends Controller {
@@ -39,10 +42,6 @@ class IndexController extends Controller {
     }
     //管理员列表界面
     public function actionList(){
-        if (\Yii::$app->user->isGuest){
-            \Yii::$app->session->setFlash('error','请先登录');
-            return $this->redirect(Url::to(['index/login']));
-        }
         $model=Admin::find()->all();
         return $this->render('list',compact('model'));
     }
@@ -126,6 +125,71 @@ class IndexController extends Controller {
         return $this->render('edit-password',compact('model'));
     }
     //活动设置
+    //导出文件
+    public function actionDe(){
+        $repair_infos = Admin::find()->asArray()->all();
+        //实例化
+        $objPHPExcel = new \PHPExcel();
+        $objWriter = new \PHPExcel_Writer_Excel5($objPHPExcel);
+        //这里是显示的标题字段 也就是你数据库的字段名称
+        $objPHPExcel->getActiveSheet()->setCellValue('A1',  '日期');//这里是设置A1单元格的内容
+        $objPHPExcel->getActiveSheet()->setCellValue('B1',  '维修名称');////这里是设置B1单元格的内容
+        $objPHPExcel->getActiveSheet()->setCellValue('C1',  '维修类型');////这里是设置B1单元格的内容
+        $objPHPExcel->getActiveSheet()->setCellValue('D1',  '消耗库存');////这里是设置B1单元格的内容
+        $objPHPExcel->getActiveSheet()->setCellValue('E1',  '维修费用');////这里是设置B1单元格的内容
+        $objPHPExcel->getActiveSheet()->setCellValue('F1',  '成本');////这里是设置B1单元格的内容
+        $objPHPExcel->getActiveSheet()->setCellValue('G1',  '毛利');////这里是设置B1单元格的内容
+        //这里是每条数据的内容了
+        foreach ($repair_infos as $key => $value) {
+            $i=$key+2;//表格是从1开始的
+            $objPHPExcel->getActiveSheet()->setCellValue('A'.$i,  $value['name']);
+            $objPHPExcel->getActiveSheet()->setCellValue('B'.$i,  $value['name']);
+            $objPHPExcel->getActiveSheet()->setCellValue('C'.$i,  $value['name']);
+            $objPHPExcel->getActiveSheet()->setCellValue('D'.$i,  $value['name']);
+            $objPHPExcel->getActiveSheet()->setCellValue('E'.$i, $value['name']);
+            $objPHPExcel->getActiveSheet()->setCellValue('F'.$i,  $value['name']);
+            $objPHPExcel->getActiveSheet()->setCellValue('G'.$i,   $value['name']);
+        }
+        //接下来当然是下载这个表格了，在浏览器输出就好了
+        $file_name = date('YmdHis');
+        header("Pragma: public");
+        header("Expires: 0");
+        header("Cache-Control:must-revalidate, post-check=0, pre-check=0");
+        header("Content-Type:application/force-download");
+        header("Content-Type:application/vnd.ms-execl");
+        header("Content-Type:application/octet-stream");
+        header("Content-Type:application/download");;
+        header('Content-Disposition:attachment;filename='.$file_name.'.xls');
+        header("Content-Transfer-Encoding:binary");
+        $objWriter->save('php://output');
+
+    }
+    //导出文件
+    public function actionDl(){
+        $basePath=\Yii::$app->basePath;
+        $file_url=$basePath.'/web/upload/excel/20171216111401.xls';
+        $filename=$file_url;
+        $objPHPExcelnew=new PHPExcel();
+        $objReader= \PHPExcel_IOFactory::createReader('Excel5');
+        $objPHPExcel=$objReader->load($filename);
+        $sheet=$objPHPExcel->getActiveSheet();
+        $highestRow=$sheet->getHighestRow();
+        $highestColumn=$sheet->getHighestColumn();
+        $highestColumnIndex=\PHPExcel_Cell::columnIndexFromString($highestColumn);
+        $excelData=array();
+        for($row=2;$row<=$highestRow;$row++)
+        {
+            for($col=0;$col<$highestColumnIndex;$col++)
+            {
+                $excelData[$row][]=(string)$sheet->getCellByColumnAndRow($col,$row)->getValue();
+            }
+        }
+        \Yii::$app->db->createCommand()->batchInsert('jnc_webset', ['title', 'keywords','describe'],$excelData)->execute();
+        echo 'insert success.';
+
+    }
+
+
 
 
 
