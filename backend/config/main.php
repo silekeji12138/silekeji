@@ -8,6 +8,7 @@ $params = array_merge(
 
 return [
     'language'=>'zh-CN',
+    'layout'=>false,
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
@@ -26,7 +27,11 @@ return [
             'identityClass' => 'backend\models\Admin',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true,],
+<<<<<<< HEAD
             'loginUrl'=>array('index/login'),
+=======
+            'loginUrl'=>['index/login'],
+>>>>>>> 60990fb69c36fd63318c187427e3e6e83c53f68f
         ],
         'session' => [
             // this is the name of the session cookie used for login on the backend

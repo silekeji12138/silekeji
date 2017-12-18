@@ -13,4 +13,7 @@ class Prize extends ActiveRecord{
     {
         return 'cb_luck_get';
     }
+    public static function getCbAction(){
+
+    }
 }
