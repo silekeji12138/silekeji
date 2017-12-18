@@ -35,9 +35,10 @@ class IndexController extends Controller {
         return $this->render('index',compact('model' ));
     }
     //管理员列表界面
-    public function actionList($search,$page=1){
+    public function actionList($page=1){
+        $search=\Yii::$app->request->get('search');
         //搜索条件判断
-        if ($search==''){
+        if (!isset($search)){
             $query = Admin::find();
         }else{
             $query = Admin::find()->orWhere(['like','username',$search])->orWhere(['like','name',$search])->orWhere(['like','really_name',$search]);
@@ -46,6 +47,7 @@ class IndexController extends Controller {
         $offset = \Yii::$app->request->post('offset');
         $offset = isset($offset)?$offset:10;
         $count = $query->count();
+        //总页数
         $total = ceil($count/$offset);
         $start = ($page-1)*$offset;
         $model = $query->limit($offset)->offset($start)->all();

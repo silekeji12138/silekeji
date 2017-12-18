@@ -8,7 +8,6 @@
 namespace backend\controllers;
 
 
-use backend\filters\YiiFilter;
 use backend\models\Action;
 use yii\helpers\Url;
 
@@ -51,14 +50,5 @@ class ActionController extends \yii\web\Controller{
             }
         }
         return $this->render('editaction',compact('model'));
-    }
-
-    public function behaviors()
-    {
-        return [
-            'rbac'=>[
-                'class'=>YiiFilter::className()
-            ]
-        ];
     }
 }

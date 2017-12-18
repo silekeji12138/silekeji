@@ -7,7 +7,6 @@
  */
 namespace backend\controllers;
 
-use backend\filters\YiiFilter;
 use backend\models\Prize;
 use yii\web\Controller;
 
@@ -16,13 +15,5 @@ class PrizeController extends Controller{
     public function actionIndex(){
           $model=Prize::find()->all();
           return $this->render('index',compact('model'));
-    }
-    public function behaviors()
-    {
-        return [
-            'rbac'=>[
-                'class'=>YiiFilter::className()
-            ]
-        ];
     }
 }
