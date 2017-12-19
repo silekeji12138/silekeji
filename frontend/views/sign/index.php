@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -80,16 +79,18 @@
         <div id="divdownwrap">
             <img src="/jnc/img/time.png"><span id="divdown"></span>
         </div>
-        <div class="search-box">
-            <input placeholder="请输入编号/名称"><a>搜索</a>
-        </div>
+        <form method="post" action="<?=\yii\helpers\Url::to(['sign/index'])?>">
+            <div class="search-box">
+                <input placeholder="请输入编号/名称" name="ss"><button><a>搜索</a></button>
+            </div>
+        </form>
     </div>
     <div class="wrapper">
         <ul class="choose">
-            <li class="on">剑南春宴席<span></span></li>
-            <li>金南春宴席<span></span></li>
+            <?php foreach ($array as $value): ?>
+            <li id="cos"><?=$value?><span></span></li>
+            <?php endforeach; ?>
         </ul>
-
         <div id="container">
             <?php foreach ($model as $v): ?>
             <div class="grid">
@@ -108,8 +109,8 @@
 </section>
 <footer>
     <a class="on"><img src="/jnc/img/footer1.png">全部参赛</a>
-    <a href="当前排名.html"><img src="/jnc/img/footer2.png">当前排名</a>
-    <a href="活动规则.html"><img src="/jnc/img/footer3.png" style="width: 20px;">活动规则</a>
+    <a href="<?=\yii\helpers\Url::to(['sign/rank'])?>"><img src="/jnc/img/footer2.png">当前排名</a>
+    <a href="<?=\yii\helpers\Url::to(['sign/rule'])?>"><img src="/jnc/img/footer3.png" style="width: 20px;">活动规则</a>
 </footer>
 <aside>
     <a href="<?=\yii\helpers\Url::to(['prize/index'])?>">
@@ -124,7 +125,7 @@
 <div id="shadowbox">
     <div class="pop1">
         <p><img src="/jnc/img/vote.png">投票成功</p>
-        <a>立即抽奖</a>
+        <a href="<?=\yii\helpers\Url::to(['prize/index'])?>">立即抽奖</a>
         <img class="close" src="/jnc/img/close.png"/>
     </div>
     <div class="pop2">
@@ -158,8 +159,8 @@
             </div>
         </div>
         <input class="phone" id="phone" placeholder="请输入手机号"/>
-        <input class="code" placeholder="验证码"/><span class="sendcode"  onclick="sendcode(this);">获取验证码</span>
-        <input type="submit" class="submit" value="立即投票"/>
+        <input class="code" placeholder="验证码" id="cahe"/><span class="sendcode"  onclick="sendcode(this);">获取验证码</span>
+        <input type="submit" name="vote" class="submit" value="立即投票"/>
         <img class="close" src="/jnc/img/close.png"/>
     </div>
 </div>
@@ -191,6 +192,8 @@
             count = 120;
             countdown = setInterval("countDown()", 1000);
             //获取手机验证码
+            var num=$('#phone').val();
+            $.get("<?=\yii\helpers\Url::to(['sms/sms'])?>",{num:num});
             layer.alert("短信发送成功！");
         }
     }
@@ -199,19 +202,51 @@
         var num = Math.floor(Math.random() * choices + lowerValue );
         return num;
     }
+    $('#cos:first').addClass('on');
     $('.vote').click(function(){
-        if(randomNum(2,4)=='2'){
-            $('#shadowbox').show();
-            $('.pop1').show();
-        }else if(randomNum(2,4)=='3'){
-            $('#shadowbox').show();
-            $('.pop2').show();
-        }else if(randomNum(2,4)=='4'){
-            $('#shadowbox').show();
-            $('.pop5').show();
+//        if(randomNum(2,4)=='2'){
+//            $('#shadowbox').show();
+//            $('.pop1').show();
+//        }else if(randomNum(2,4)=='3'){
+//            $('#shadowbox').show();
+//            $('.pop2').show();
+//        }else if(randomNum(2,4)=='4'){
+        $.get("<?=\yii\helpers\Url::to(['index/check'])?>",function (msg) {
+             if (msg=='1'){
+                 $('#shadowbox').show();
+                 $('.pop2').show();
+             }else {
+                 $('#shadowbox').show();
+                 $('.pop5').show();
+             }
+        });
+
+//        }
+    });
+    <!--验证码的处理,,,,,,,,,,,验证码的处理,,,,,,,,,验证码的处理,,,,,,,,验证码的处理,,,,,,,验证码的处理-->
+//    $('input[name=vote]').click(function () {
+    $('body').on('click','input[name=vote]',function () {
+        var cahe=$('#cahe').val();
+        var num=$('#phone').val();
+        if (cahe.length!=4){
+            alert('请正确输入验证码');
+        }else {
+            $.getJSON("<?=\yii\helpers\Url::to(['index/check1'])?>",{msg:cahe,num:num},function (msg){
+                 if (msg=='1'){
+                     $('.pop5').hide();
+                     $('#shadowbox').show();
+                     $('.pop1').show();
+                 }else {
+                     alert('验证码错误');
+                 }
+            });
+
+
         }
 
-    })
+    });
+
+
     $('.close').click(function(){
         $('#shadowbox').hide();
         $(this).parent().hide();

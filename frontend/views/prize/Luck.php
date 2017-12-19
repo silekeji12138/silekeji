@@ -219,9 +219,9 @@ function rnd(n, m){
 	    
 	</section>
 	<footer>
-		<a class="on"><img src="/jnc/img/footer1.png">全部参赛</a>
-		<a><img src="/jnc/img/footer2.png">当前排名</a>
-		<a><img src="/jnc/img/footer3.png" style="width: 20px;">活动规则</a>
+		<a href="<?=\yii\helpers\Url::to(['sign/index'])?>"><img src="/jnc/img/footer1.png">全部参赛</a>
+		<a href="<?=\yii\helpers\Url::to(['sign/rank'])?>"><img src="/jnc/img/footer2.png">当前排名</a>
+		<a href="<?=\yii\helpers\Url::to(['sign/rule'])?>"><img src="/jnc/img/footer3.png" style="width: 20px;">活动规则</a>
 	</footer>
 	
 </body>

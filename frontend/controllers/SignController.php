@@ -7,8 +7,8 @@
  */
 namespace frontend\controllers;
 use frontend\models\Action1;
+use frontend\models\Action;
 use frontend\models\Sign;
-use yii\rest\Action;
 use yii\web\Controller;
 
 class SignController extends Controller{
@@ -21,20 +21,37 @@ class SignController extends Controller{
                if ($model->validate()){
                    $model->addtime=time()+3600*8;
                    $model->save();
-                   var_dump(1110);die;
+                   return $this->redirect('index');
                }
            }
             return $this->render('sign');
        }
        public function actionIndex(){ //首页参加人数 访问人数 投票数量的显示
+           $type=Action::find()->select(['type'])->where(['id'=>1])->asArray()->one(); //查询type的方式与格式
+           $name=implode('',$type);
+           $array=explode(',',$name);
            $time=\frontend\models\Action::find()->select(['end'])->one();
            $model2=Action1::find()->select(['vote_num','view','join_num'])->where(['action_id'=>1])->asArray()->all();
-           $model=Sign::find()->all();
-           return $this->render('index',compact('model','model2','time'));
+           $request=\Yii::$app->request;
+           if ($request->isPost){
+               $id=$_POST['ss'];
+               $model=Sign::find()->where(['like','title',$id])->orWhere(['like','id',$id])->all();
+           }else{
+               $model=Sign::find()->all();
+           }
+           return $this->render('index',compact('model','model2','time','array'));
        }
        public function actionIntro($id){    //参加用户的详细信息
            $model=Sign::findOne($id);
            return $this->render('intro',compact('model'));
+       }
+
+       public function actionRule(){  //活动的详细规则
+           return $this->render('rule');
+       }
+
+       public function actionRank(){  //活动的当前的排名
+           return $this->render('rank');
        }
 
 }
