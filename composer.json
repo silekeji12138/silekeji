@@ -24,8 +24,13 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "moonlandsoft/yii2-phpexcel": "^1.1",
+<<<<<<< HEAD
         "yiisoft/yii2-redis": "^2.0",
         "kucha/ueditor": "*"
+=======
+        "mdmsoft/yii2-admin": "~2.0",
+        "yiisoft/yii2-redis": "^2.0"
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

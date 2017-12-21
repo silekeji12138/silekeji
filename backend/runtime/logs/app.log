@@ -6312,6 +6312,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1513569634.7276
     'REQUEST_TIME' => 1513569634
 ]
+<<<<<<< HEAD
 2017-12-18 07:34:03 [127.0.0.1][-][i0c1ptc18uc11a3ndtf1vauhp5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "model/index".' in E:\www\jnc\vendor\yiisoft\yii2\base\Module.php:537
 Stack trace:
 #0 E:\www\jnc\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('model/index', Array)
@@ -6326,10 +6327,28 @@ Stack trace:
 #2 {main}
 2017-12-18 07:34:03 [127.0.0.1][-][i0c1ptc18uc11a3ndtf1vauhp5][info][application] $_COOKIE = [
     'advanced-backend' => 'i0c1ptc18uc11a3ndtf1vauhp5'
+=======
+2017-12-18 04:56:13 [127.0.0.1][8][9clg3ltsv2p7o78ffvcgj3thh0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user/list".' in F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/list', Array)
+#1 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 F:\phpStudy\WWW\jnc\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\phpStudy\WWW\jnc\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-12-18 04:56:13 [127.0.0.1][8][9clg3ltsv2p7o78ffvcgj3thh0][info][application] $_COOKIE = [
+    '_csrf-backend' => 'de9ea683c730667c851b976cf2358cd667cb63ad71a997abcf2037a4163bdb75a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"XIiG6KoFk9Rdyo6eT98_zJ3F-Qjgt8MW\";}'
+    'advanced-backend' => '9clg3ltsv2p7o78ffvcgj3thh0'
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/'
 ]
 
@@ -6344,10 +6363,27 @@ $_SERVER = [
     '_FCGI_SHUTDOWN_EVENT_' => '2192'
     'SCRIPT_NAME' => '/index.php'
     'REQUEST_URI' => '/model/index'
+=======
+    '__id' => 8
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;F:\\PHPSTUDY\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;F:\\软件\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\M S I\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\M S I\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2040'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/user/list'
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
     'QUERY_STRING' => ''
     'REQUEST_METHOD' => 'GET'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
+<<<<<<< HEAD
     'REDIRECT_URL' => '/model/index'
     'REMOTE_PORT' => '50556'
     'SCRIPT_FILENAME' => 'E:/www/jnc/backend/web/index.php'
@@ -6364,12 +6400,31 @@ $_SERVER = [
     'SERVER_SIGNATURE' => ''
     'SystemRoot' => 'C:\\WINDOWS'
     'HTTP_COOKIE' => 'advanced-backend=i0c1ptc18uc11a3ndtf1vauhp5'
+=======
+    'REDIRECT_URL' => '/user/list'
+    'REMOTE_PORT' => '60431'
+    'SCRIPT_FILENAME' => 'F:/phpStudy/WWW/jnc/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/phpStudy/WWW/jnc/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/phpStudy/WWW/jnc/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.admin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => '_csrf-backend=de9ea683c730667c851b976cf2358cd667cb63ad71a997abcf2037a4163bdb75a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22XIiG6KoFk9Rdyo6eT98_zJ3F-Qjgt8MW%22%3B%7D; advanced-backend=9clg3ltsv2p7o78ffvcgj3thh0'
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
     'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
     'HTTP_CONNECTION' => 'close'
+<<<<<<< HEAD
     'HTTP_HOST' => 'www.jnc.com'
     'REDIRECT_STATUS' => '200'
     'FCGI_ROLE' => 'RESPONDER'
@@ -6790,10 +6845,36 @@ Stack trace:
 #2 {main}
 2017-12-18 07:37:19 [127.0.0.1][-][i0c1ptc18uc11a3ndtf1vauhp5][info][application] $_COOKIE = [
     'advanced-backend' => 'i0c1ptc18uc11a3ndtf1vauhp5'
+=======
+    'HTTP_HOST' => 'www.admin.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1513572973.2324
+    'REQUEST_TIME' => 1513572973
+]
+2017-12-18 04:56:17 [127.0.0.1][8][9clg3ltsv2p7o78ffvcgj3thh0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: index/' in F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#1 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index', Array)
+#2 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\phpStudy\WWW\jnc\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\phpStudy\WWW\jnc\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-12-18 04:56:17 [127.0.0.1][8][9clg3ltsv2p7o78ffvcgj3thh0][info][application] $_COOKIE = [
+    '_csrf-backend' => 'de9ea683c730667c851b976cf2358cd667cb63ad71a997abcf2037a4163bdb75a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"XIiG6KoFk9Rdyo6eT98_zJ3F-Qjgt8MW\";}'
+    'advanced-backend' => '9clg3ltsv2p7o78ffvcgj3thh0'
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/'
 ]
 
@@ -6808,10 +6889,27 @@ $_SERVER = [
     '_FCGI_SHUTDOWN_EVENT_' => '2192'
     'SCRIPT_NAME' => '/index.php'
     'REQUEST_URI' => '/model/index'
+=======
+    '__id' => 8
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;F:\\PHPSTUDY\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;F:\\软件\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\M S I\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\M S I\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2040'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index'
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
     'QUERY_STRING' => ''
     'REQUEST_METHOD' => 'GET'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
+<<<<<<< HEAD
     'REDIRECT_URL' => '/model/index'
     'REMOTE_PORT' => '50635'
     'SCRIPT_FILENAME' => 'E:/www/jnc/backend/web/index.php'
@@ -6828,11 +6926,30 @@ $_SERVER = [
     'SERVER_SIGNATURE' => ''
     'SystemRoot' => 'C:\\WINDOWS'
     'HTTP_COOKIE' => 'advanced-backend=i0c1ptc18uc11a3ndtf1vauhp5'
+=======
+    'REDIRECT_URL' => '/index'
+    'REMOTE_PORT' => '60431'
+    'SCRIPT_FILENAME' => 'F:/phpStudy/WWW/jnc/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/phpStudy/WWW/jnc/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/phpStudy/WWW/jnc/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.admin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => '_csrf-backend=de9ea683c730667c851b976cf2358cd667cb63ad71a997abcf2037a4163bdb75a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22XIiG6KoFk9Rdyo6eT98_zJ3F-Qjgt8MW%22%3B%7D; advanced-backend=9clg3ltsv2p7o78ffvcgj3thh0'
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
     'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+<<<<<<< HEAD
     'HTTP_CACHE_CONTROL' => 'no-cache'
     'HTTP_PRAGMA' => 'no-cache'
     'HTTP_CONNECTION' => 'close'
@@ -6857,10 +6974,37 @@ Stack trace:
 #2 {main}
 2017-12-18 07:37:19 [127.0.0.1][-][i0c1ptc18uc11a3ndtf1vauhp5][info][application] $_COOKIE = [
     'advanced-backend' => 'i0c1ptc18uc11a3ndtf1vauhp5'
+=======
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.admin.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1513572977.7343
+    'REQUEST_TIME' => 1513572977
+]
+2017-12-18 04:56:24 [127.0.0.1][8][9clg3ltsv2p7o78ffvcgj3thh0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: index/search' in F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#1 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index/search', Array)
+#2 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\phpStudy\WWW\jnc\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\phpStudy\WWW\jnc\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-12-18 04:56:24 [127.0.0.1][8][9clg3ltsv2p7o78ffvcgj3thh0][info][application] $_COOKIE = [
+    '_csrf-backend' => 'de9ea683c730667c851b976cf2358cd667cb63ad71a997abcf2037a4163bdb75a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"XIiG6KoFk9Rdyo6eT98_zJ3F-Qjgt8MW\";}'
+    'advanced-backend' => '9clg3ltsv2p7o78ffvcgj3thh0'
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/'
 ]
 
@@ -6875,10 +7019,27 @@ $_SERVER = [
     '_FCGI_SHUTDOWN_EVENT_' => '2192'
     'SCRIPT_NAME' => '/index.php'
     'REQUEST_URI' => '/model/index'
+=======
+    '__id' => 8
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;F:\\PHPSTUDY\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;F:\\软件\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\M S I\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\M S I\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2040'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/search'
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
     'QUERY_STRING' => ''
     'REQUEST_METHOD' => 'GET'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
+<<<<<<< HEAD
     'REDIRECT_URL' => '/model/index'
     'REMOTE_PORT' => '50635'
     'SCRIPT_FILENAME' => 'E:/www/jnc/backend/web/index.php'
@@ -6895,11 +7056,30 @@ $_SERVER = [
     'SERVER_SIGNATURE' => ''
     'SystemRoot' => 'C:\\WINDOWS'
     'HTTP_COOKIE' => 'advanced-backend=i0c1ptc18uc11a3ndtf1vauhp5'
+=======
+    'REDIRECT_URL' => '/index/search'
+    'REMOTE_PORT' => '60443'
+    'SCRIPT_FILENAME' => 'F:/phpStudy/WWW/jnc/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/phpStudy/WWW/jnc/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/phpStudy/WWW/jnc/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.admin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => '_csrf-backend=de9ea683c730667c851b976cf2358cd667cb63ad71a997abcf2037a4163bdb75a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22XIiG6KoFk9Rdyo6eT98_zJ3F-Qjgt8MW%22%3B%7D; advanced-backend=9clg3ltsv2p7o78ffvcgj3thh0'
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
     'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+<<<<<<< HEAD
     'HTTP_CACHE_CONTROL' => 'no-cache'
     'HTTP_PRAGMA' => 'no-cache'
     'HTTP_CONNECTION' => 'close'
@@ -6942,10 +7122,44 @@ $_SERVER = [
     '_FCGI_SHUTDOWN_EVENT_' => '2192'
     'SCRIPT_NAME' => '/index.php'
     'REQUEST_URI' => '/model/index'
+=======
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.admin.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1513572984.1826
+    'REQUEST_TIME' => 1513572984
+]
+2017-12-18 06:01:07 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user/list".' in F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/list', Array)
+#1 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 F:\phpStudy\WWW\jnc\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 F:\phpStudy\WWW\jnc\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\phpStudy\WWW\jnc\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-12-18 06:01:07 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;F:\\PHPSTUDY\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;F:\\软件\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Users\\M S I\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\M S I\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2456'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/user/list'
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
     'QUERY_STRING' => ''
     'REQUEST_METHOD' => 'GET'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
+<<<<<<< HEAD
     'REDIRECT_URL' => '/model/index'
     'REMOTE_PORT' => '50674'
     'SCRIPT_FILENAME' => 'E:/www/jnc/backend/web/index.php'
@@ -6962,12 +7176,30 @@ $_SERVER = [
     'SERVER_SIGNATURE' => ''
     'SystemRoot' => 'C:\\WINDOWS'
     'HTTP_COOKIE' => 'advanced-backend=i0c1ptc18uc11a3ndtf1vauhp5'
+=======
+    'REDIRECT_URL' => '/user/list'
+    'REMOTE_PORT' => '49356'
+    'SCRIPT_FILENAME' => 'F:/phpStudy/WWW/jnc/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/phpStudy/WWW/jnc/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/phpStudy/WWW/jnc/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.admin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
     'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
     'HTTP_CONNECTION' => 'close'
+<<<<<<< HEAD
     'HTTP_HOST' => 'www.jnc.com'
     'REDIRECT_STATUS' => '200'
     'FCGI_ROLE' => 'RESPONDER'
@@ -26571,4 +26803,12 @@ Stack trace:
     'PHP_SELF' => '/index.php'
     'REQUEST_TIME_FLOAT' => 1513820861.8412
     'REQUEST_TIME' => 1513820861
+=======
+    'HTTP_HOST' => 'www.admin.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1513576867.0197
+    'REQUEST_TIME' => 1513576867
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
 ]
