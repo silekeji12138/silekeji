@@ -1,7 +1,12 @@
 {
     "name": "yiisoft/yii2-app-advanced",
     "description": "Yii 2 Advanced Project Template",
-    "keywords": ["yii2", "framework", "advanced", "project template"],
+    "keywords": [
+        "yii2",
+        "framework",
+        "advanced",
+        "project template"
+    ],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
     "license": "BSD-3-Clause",
@@ -19,9 +24,18 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "moonlandsoft/yii2-phpexcel": "^1.1",
-        "mdmsoft/yii2-admin": "~2.0",
+<<<<<<< HEAD
         "yiisoft/yii2-redis": "^2.0",
         "kucha/ueditor": "*"
+=======
+        "mdmsoft/yii2-admin": "~2.0",
+<<<<<<< HEAD
+        "yiisoft/yii2-redis": "^2.0",
+        "kucha/ueditor": "*"
+=======
+        "yiisoft/yii2-redis": "^2.0"
+>>>>>>> 6f7ff3877e5025903af403a931d9d3efbeb2b7b8
+>>>>>>> f3e2f85ad9c3be9796e8c29f09b0036668b8ec2c
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
@@ -33,10 +47,14 @@
     "config": {
         "process-timeout": 1800
     },
-    "repositories": [
-        {
+    "repositories": {
+        "0": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
         }
-    ]
+    }
 }

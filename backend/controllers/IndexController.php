@@ -18,13 +18,13 @@ class IndexController extends Controller {
             $model->load($request->post());
             if($model->validate()){
                 if($model->login()){
-                    \Yii::$app->session->setFlash('success','登录成功');
                     $admin=\Yii::$app->user->identity;
                     $ip=ip2long(\Yii::$app->request->getUserIP());
                     $rs=Admin::findOne($admin->id);
                     $rs->last_login_time=time()+3600*8;
                     $rs->last_login_ip=$ip;
                     $rs->save();
+                    \Yii::$app->session->setFlash('success','登录成功');
                     return $this->redirect(Url::to(['index/list']));
                 }else{
                     \Yii::$app->session->setFlash('error','请检测您的用户民或密码');
@@ -32,7 +32,7 @@ class IndexController extends Controller {
                 }
             }
         }
-        return $this->render('index',compact('model' ));
+        return $this->render('login',['model'=>$model]);
     }
     //管理员列表界面
     public function actionList($page=1){

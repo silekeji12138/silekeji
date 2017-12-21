@@ -16,6 +16,8 @@
                 <h3><a href="#"><em class="ficon ficon-changyongxiangmu"></em> 系统管理</a></h3>
                 <ul class="sub">
                     <li><a href="#">系统设置</a></li>
+                    <li><a href="<?=\yii\helpers\Url::to(['canshu/index'])?>">参数管理</a></li>
+                    <li><a href="<?=\yii\helpers\Url::to(['model/index'])?>">模型管理</a></li>
                 </ul>
             </li>
             <li class="nLi">

@@ -13,7 +13,7 @@ class AdminForm extends Model{
         ];
     }
 
-    public function attributes()
+    public function attributeLabels()
     {
         return[
             'username'=>'账号',
