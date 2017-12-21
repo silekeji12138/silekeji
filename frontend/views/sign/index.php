@@ -55,6 +55,67 @@
             }
         });
     </script>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .outer{
+            position: relative;
+            margin:20px auto;
+            width: 200px;
+            height: 30px;
+            line-height: 28px;
+            border:1px solid #ccc;
+            background: #ccc9c9;
+        }
+        .outer span,.filter-box,.inner{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .outer span{
+            display: block;
+            padding:0  0 0 36px;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            text-align: center;
+        }
+        .filter-box{
+            width: 0;
+            height: 100%;
+            background: green;
+            z-index: 9;
+        }
+        .outer.act span{
+            padding:0 36px 0 0;
+        }
+        .inner{
+            width: 36px;
+            height: 28px;
+            text-align: center;
+            background: #fff;
+            cursor: pointer;
+            font-family: "宋体";
+            z-index: 10;
+            font-weight: bold;
+            color: #929292;
+        }
+        .outer.act .inner{
+            color: green;
+        }
+        .outer.act span{
+            z-index: 99;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -63,25 +124,31 @@
 <section>
     <div class="part-1">
         <ul class="infor">
+            <?php if ($rule[0]['t_x']==1){ ?>
             <li>
                 参与者</br>
                 <?=$model2[0]['join_num']?>
             </li>
+            <?php } ;?>
+            <?php if ($rule[0]['p_x']==1){ ?>
             <li>
                 投票数</br>
                 <?=$model2[0]['vote_num']?>
             </li>
+            <?php } ;?>
+            <?php if ($rule[0]['l_x']==1){ ?>
             <li>
                 访问量</br>
                 <?=$model2[0]['view']?>
             </li>
+            <?php } ;?>
         </ul>
         <div id="divdownwrap">
             <img src="/jnc/img/time.png"><span id="divdown"></span>
         </div>
         <form method="post" action="<?=\yii\helpers\Url::to(['sign/index'])?>">
             <div class="search-box">
-                <input placeholder="请输入编号/名称" name="ss"><button><a>搜索</a></button>
+                <input type="text" placeholder="请输入编号/名称" name="ss"><a><button style="width: 100px;height: 40px;background-color: transparent;border-color: transparent">搜索</button></a>
             </div>
         </form>
     </div>
@@ -95,7 +162,7 @@
             <?php foreach ($model as $v): ?>
             <div class="grid">
                 <a href="<?=\yii\helpers\Url::to(['sign/intro'])?>?id=<?=$v['id']?>"><div class="imgholder">
-                        <img src="/jnc/img/product1.jpg">
+                        <img src="<?=$v['theme_img']?>">
                     </div></a>
                 <p><?=$v['title']?></p>
                 <div class="vote"><img src="/jnc/img/zan.png">投票</div>
@@ -133,6 +200,17 @@
         <p>明天再来!</p>
         <img class="close" src="/jnc/img/close.png"/>
     </div>
+    <a>
+<div class="pop3">
+    <div class="outer">
+        <div class="filter-box"></div>
+        <span>
+            滑动解锁
+        </span>
+        <div class="inner">&gt;&gt;</div>
+    </div>
+</div>
+    </a>
     <div class="pop5">
         <div data-type="drag_embed" class="j-captcha">
             <div class="yidun yidun--light yidun--embed yidun--jigsaw">
@@ -164,6 +242,7 @@
         <img class="close" src="/jnc/img/close.png"/>
     </div>
 </div>
+
 </body>
 
 <script type="text/javascript">
@@ -211,14 +290,25 @@
 //            $('#shadowbox').show();
 //            $('.pop2').show();
 //        }else if(randomNum(2,4)=='4'){
+        /**
+         * 分割线
+         */
         $.get("<?=\yii\helpers\Url::to(['index/check'])?>",function (msg) {
+            <?php if ($rule[0]['y_z']==1){?>
              if (msg=='1'){
                  $('#shadowbox').show();
-                 $('.pop2').show();
+                 $('.pop2').show()
              }else {
                  $('#shadowbox').show();
-                 $('.pop5').show();
+                 $('.pop1').show();
              }
+             <?php }elseif($rule[0]['y_z']==2){?>
+            $('#shadowbox').show();
+            $('.pop3').show();
+            <?php }else{ ?>
+            $('#shadowbox').show();
+            $('.pop5').show();
+            <?php }?>
         });
 
 //        }
@@ -250,7 +340,8 @@
     $('.close').click(function(){
         $('#shadowbox').hide();
         $(this).parent().hide();
-    })
+        window.location.reload();
+    });
     var interval = 1000;
     function ShowCountDown(year,month,day,divname)
     {
@@ -267,5 +358,44 @@
         cc.innerHTML = "活动结束倒计时"+day1+"天"+hour+"小时"+minute+"分"+second+"秒";
     }
     window.setInterval(function(){ShowCountDown(<?=date('Y',$time->end)?>,<?=date('m',$time->end)?>,<?=date('d',$time->end)?>,'divdown');}, interval);
+
+    /**
+     * 以下为我的测试,能用就用.不能就换
+     */
+    $(".inner").mousedown(function(e){
+        var that=$(this).closest('a');
+        var el = $(".inner"),os = el.offset(),dx,$span=$(".outer>span"),$filter=$(".filter-box"),_differ=$(".outer").width()-el.width();
+        $(document).mousemove(function(e){
+            dx = e.pageX - os.left;
+            if(dx<0){
+                dx=0;
+            }else if(dx>_differ){
+                dx=_differ;
+            }
+            $filter.css('width',dx);
+            el.css("left",dx);
+        });
+        $(document).mouseup(function(e){
+            $(document).off('mousemove');
+            $(document).off('mouseup');
+            dx = e.pageX - os.left;
+            if(dx<_differ){
+                dx=0;
+                $span.html("滑动解锁");
+            }else if(dx>=_differ){
+                dx=_differ;
+                $(".outer").addClass("act");
+                $span.html("验证通过！");
+                el.html('&radic;');
+                that.remove();
+                $('#shadowbox').show();
+                $('.pop1').show();
+            }
+            $filter.css('width',dx);
+            el.css("left",dx);
+
+        })
+    });
+
 </script>
 </html>

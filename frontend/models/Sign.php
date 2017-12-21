@@ -17,7 +17,7 @@ class Sign extends  ActiveRecord{
     public function rules()
     {
         return[
-            [['title','join_person','contact','address','info','story','type'],'required'],
+            [['title','join_person','contact','address','info','story','type','addtime'],'safe'],
             [['header','city','prvoince','county'],'safe']
         ];
     }
