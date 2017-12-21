@@ -9,8 +9,10 @@
 namespace backend\controllers;
 
 use backend\models\CreateTable;
+use backend\models\Html;
 use backend\models\SlCanshu;
 use backend\models\SlField;
+use backend\models\SlFiled;
 use backend\models\SlMoxing;
 use yii\web\Controller;
 
@@ -111,5 +113,15 @@ class ModelController extends Controller
         } else{
             var_dump($model->getErrors());die;
         }
+    }
+
+    public function actionTest(){
+        $fileds = SlFiled::find()->where(['model_id'=>94])->andWhere(['u5'=>1])->asArray()->all();
+        $html = '';
+        foreach ($fileds as $v){
+            $obj = new Html();
+            $html .= $obj->getInput($v['u7'],$v['u2'],$v['u1']);
+        }
+        return $this->render('test',['html'=>$html]);
     }
 }
