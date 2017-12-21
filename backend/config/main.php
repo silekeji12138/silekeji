@@ -8,6 +8,7 @@ $params = array_merge(
 
 return [
     'language'=>'zh-CN',
+    //取消默认样式
     'layout'=>false,
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),

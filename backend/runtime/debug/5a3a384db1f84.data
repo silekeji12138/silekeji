@@ -1,0 +1,248 @@
+a:12:{s:6:"config";s:1740:"a:5:{s:10:"phpVersion";s:6:"5.6.27";s:10:"yiiVersion";s:8:"2.0.13.1";s:11:"application";a:8:{s:3:"yii";s:8:"2.0.13.1";s:4:"name";s:14:"My Application";s:7:"version";s:3:"1.0";s:8:"language";s:5:"zh-CN";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:6:"5.6.27";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:7:{s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.1.0.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:42:"E:\www\jnc\vendor/yiisoft/yii2-swiftmailer";}}s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:40:"E:\www\jnc\vendor/yiisoft/yii2-bootstrap";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:8:"2.0.13.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:36:"E:\www\jnc\vendor/yiisoft/yii2-debug";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:34:"E:\www\jnc\vendor/yiisoft/yii2-gii";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.3.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:36:"E:\www\jnc\vendor/yiisoft/yii2-faker";}}s:26:"moonlandsoft/yii2-phpexcel";a:3:{s:4:"name";s:26:"moonlandsoft/yii2-phpexcel";s:7:"version";s:7:"1.1.0.0";s:5:"alias";a:1:{s:18:"@moonland/phpexcel";s:44:"E:\www\jnc\vendor/moonlandsoft/yii2-phpexcel";}}s:18:"mdmsoft/yii2-admin";a:3:{s:4:"name";s:18:"mdmsoft/yii2-admin";s:7:"version";s:7:"2.8.0.0";s:5:"alias";a:1:{s:10:"@mdm/admin";s:36:"E:\www\jnc\vendor/mdmsoft/yii2-admin";}}}}";s:7:"request";s:4978:"a:15:{s:7:"flashes";a:0:{}s:10:"statusCode";i:500;s:14:"requestHeaders";a:13:{s:6:"cookie";s:43:"advanced-backend=ffd6thvtb5cks4cfatgtbpmnt6";s:15:"accept-language";s:14:"zh-CN,zh;q=0.8";s:15:"accept-encoding";s:13:"gzip, deflate";s:7:"referer";s:47:"http://www.jnc.com/filed/edit?id=11&model_id=94";s:6:"accept";s:85:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";s:10:"user-agent";s:110:"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36";s:12:"content-type";s:33:"application/x-www-form-urlencoded";s:25:"upgrade-insecure-requests";s:1:"1";s:6:"origin";s:18:"http://www.jnc.com";s:13:"cache-control";s:9:"max-age=0";s:14:"content-length";s:3:"117";s:10:"connection";s:5:"close";s:4:"host";s:11:"www.jnc.com";}s:15:"responseHeaders";a:8:{s:12:"X-Powered-By";s:10:"PHP/5.6.27";s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:62:"no-store, no-cache, must-revalidate, post-check=0, pre-check=0";s:6:"Pragma";s:8:"no-cache";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";s:11:"X-Debug-Tag";s:13:"5a3a384db1f84";s:16:"X-Debug-Duration";s:3:"130";s:12:"X-Debug-Link";s:37:"/debug/default/view?tag=5a3a384db1f84";}s:5:"route";s:10:"filed/edit";s:6:"action";s:49:"backend\controllers\FiledController::actionEdit()";s:12:"actionParams";a:2:{i:0;s:2:"94";i:1;s:2:"11";}s:7:"general";a:5:{s:6:"method";s:4:"POST";s:6:"isAjax";b:0;s:6:"isPjax";b:0;s:7:"isFlash";b:0;s:18:"isSecureConnection";b:0;}s:11:"requestBody";a:3:{s:12:"Content Type";s:33:"application/x-www-form-urlencoded";s:3:"Raw";s:117:"u2=%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4&u1=tianjiashijian&u4=1&u5=1&u7=%E6%96%87%E6%9C%AC%E6%A1%86&u8=&u9=10%25&u10=0";s:17:"Decoded to Params";a:8:{s:2:"u2";s:12:"添加时间";s:2:"u1";s:14:"tianjiashijian";s:2:"u4";s:1:"1";s:2:"u5";s:1:"1";s:2:"u7";s:9:"文本框";s:2:"u8";s:0:"";s:2:"u9";s:3:"10%";s:3:"u10";s:1:"0";}}s:6:"SERVER";a:48:{s:4:"PATH";s:270:"E:\tools\phpstudy\php\php-7.0.12-nts;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\AppData\Roaming\Composer\vendor\bin;";s:10:"SYSTEMROOT";s:10:"C:\WINDOWS";s:7:"COMSPEC";s:27:"C:\WINDOWS\system32\cmd.exe";s:7:"PATHEXT";s:53:".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC";s:6:"WINDIR";s:10:"C:\WINDOWS";s:21:"PHP_FCGI_MAX_REQUESTS";s:4:"1000";s:5:"PHPRC";s:37:"E:/tools/phpstudy/php/php-5.6.27-nts/";s:21:"_FCGI_SHUTDOWN_EVENT_";s:4:"3068";s:11:"SCRIPT_NAME";s:10:"/index.php";s:11:"REQUEST_URI";s:29:"/filed/edit?model_id=94&id=11";s:12:"QUERY_STRING";s:17:"model_id=94&id=11";s:14:"REQUEST_METHOD";s:4:"POST";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:21:"REDIRECT_QUERY_STRING";s:17:"model_id=94&id=11";s:12:"REDIRECT_URL";s:11:"/filed/edit";s:11:"REMOTE_PORT";s:5:"58340";s:15:"SCRIPT_FILENAME";s:32:"E:/www/jnc/backend/web/index.php";s:12:"SERVER_ADMIN";s:18:"admin@phpStudy.net";s:21:"CONTEXT_DOCUMENT_ROOT";s:22:"E:/www/jnc/backend/web";s:14:"CONTEXT_PREFIX";s:0:"";s:14:"REQUEST_SCHEME";s:4:"http";s:13:"DOCUMENT_ROOT";s:22:"E:/www/jnc/backend/web";s:11:"REMOTE_ADDR";s:9:"127.0.0.1";s:11:"SERVER_PORT";s:2:"80";s:11:"SERVER_ADDR";s:9:"127.0.0.1";s:11:"SERVER_NAME";s:11:"www.jnc.com";s:15:"SERVER_SOFTWARE";s:52:"Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9";s:16:"SERVER_SIGNATURE";s:0:"";s:10:"SystemRoot";s:10:"C:\WINDOWS";s:11:"HTTP_COOKIE";s:43:"advanced-backend=ffd6thvtb5cks4cfatgtbpmnt6";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"zh-CN,zh;q=0.8";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:12:"HTTP_REFERER";s:47:"http://www.jnc.com/filed/edit?id=11&model_id=94";s:11:"HTTP_ACCEPT";s:85:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8";s:15:"HTTP_USER_AGENT";s:110:"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:11:"HTTP_ORIGIN";s:18:"http://www.jnc.com";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:14:"CONTENT_LENGTH";s:3:"117";s:15:"HTTP_CONNECTION";s:5:"close";s:9:"HTTP_HOST";s:11:"www.jnc.com";s:15:"REDIRECT_STATUS";s:3:"200";s:9:"FCGI_ROLE";s:9:"RESPONDER";s:8:"PHP_SELF";s:10:"/index.php";s:18:"REQUEST_TIME_FLOAT";d:1513764941.691087;s:12:"REQUEST_TIME";i:1513764941;}s:3:"GET";a:2:{s:8:"model_id";s:2:"94";s:2:"id";s:2:"11";}s:4:"POST";a:8:{s:2:"u2";s:12:"添加时间";s:2:"u1";s:14:"tianjiashijian";s:2:"u4";s:1:"1";s:2:"u5";s:1:"1";s:2:"u7";s:9:"文本框";s:2:"u8";s:0:"";s:2:"u9";s:3:"10%";s:3:"u10";s:1:"0";}s:6:"COOKIE";a:1:{s:16:"advanced-backend";s:26:"ffd6thvtb5cks4cfatgtbpmnt6";}s:5:"FILES";a:0:{}s:7:"SESSION";a:3:{s:7:"__flash";a:2:{s:7:"success";i:-1;s:5:"error";i:-1;}s:7:"success";s:12:"添加成功";s:5:"error";s:12:"添加失败";}}";s:3:"log";s:13859:"a:1:{s:8:"messages";a:35:{i:0;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1513764941.712358;i:4;a:0:{}i:5;i:1684480;}i:1;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1513764941.7124491;i:4;a:0:{}i:5;i:1686336;}i:2;a:6:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1513764941.72489;i:4;a:0:{}i:5;i:2570944;}i:3;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1513764941.7281041;i:4;a:0:{}i:5;i:2720928;}i:4;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1513764941.7317071;i:4;a:0:{}i:5;i:2893528;}i:5;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1513764941.7322071;i:4;a:0:{}i:5;i:2926368;}i:12;a:6:{i:0;s:29:"Route requested: 'filed/edit'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1513764941.734112;i:4;a:0:{}i:5;i:3076328;}i:13;a:6:{i:0;s:24:"Route to run: filed/edit";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1513764941.736084;i:4;a:0:{}i:5;i:3220728;}i:14;a:6:{i:0;s:65:"Running action: backend\controllers\FiledController::actionEdit()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1513764941.736366;i:4;a:0:{}i:5;i:3231248;}i:15;a:6:{i:0;s:54:"Opening DB connection: mysql:host=127.0.0.1;dbname=jnc";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1513764941.7518611;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4607608;}i:18;a:6:{i:0;s:40:"SELECT * FROM `sl_filed` WHERE `id`='11'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7542;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4614576;}i:21;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `sl_filed`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7556379;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4637920;}i:24;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_filed' AND kcu.table_name = 'sl_filed'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.767952;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4667208;}i:27;a:6:{i:0;s:41:"SELECT * FROM `sl_moxing` WHERE `id`='94'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7768681;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4924328;}i:30;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `sl_moxing`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7775421;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4935768;}i:33;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_moxing' AND kcu.table_name = 'sl_moxing'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7880931;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4947136;}i:36;a:6:{i:0;s:48:"SELECT * FROM `sl_canshu` WHERE `u1`='文本框'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7912209;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5017704;}i:39;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `sl_canshu`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7918019;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5031240;}i:42;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_canshu' AND kcu.table_name = 'sl_canshu'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.8019941;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5044104;}i:45;a:6:{i:0;s:118:"ALTER TABLE `sl_user` CHANGE COLUMN `tianjiashijian` `tianjiashijian`  varchar(255)  NOT NULL  COMMENT '添加时间';";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.8035049;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:112;s:8:"function";s:5:"query";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5039528;}i:48;a:6:{i:0;s:3242:"exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tianjiashijian' in 'sl_user'' in E:\www\jnc\vendor\yiisoft\yii2\db\Command.php:1067
+Stack trace:
+#0 E:\www\jnc\vendor\yiisoft\yii2\db\Command.php(1067): PDOStatement->execute()
+#1 E:\www\jnc\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...')
+#2 E:\www\jnc\backend\models\CreateTable.php(112): yii\db\Command->query()
+#3 E:\www\jnc\backend\controllers\FiledController.php(58): backend\models\CreateTable->updateColumn('<span class="st...', Object(backend\models\SlFiled), '<span class="st...')
+#4 [internal function]: backend\controllers\FiledController->actionEdit('<span class="st...', '<span class="st...')
+#5 E:\www\jnc\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#6 E:\www\jnc\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams('[<span class="s...')
+#7 E:\www\jnc\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#8 E:\www\jnc\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#9 E:\www\jnc\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\www\jnc\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tianjiashijian' in 'sl_user'
+The SQL being executed was: ALTER TABLE `sl_user` CHANGE COLUMN `tianjiashijian` `tianjiashijian`  varchar(255)  NOT NULL  COMMENT '添加时间';' in E:\www\jnc\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 E:\www\jnc\vendor\yiisoft\yii2\db\Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE `sl...')
+#1 E:\www\jnc\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...')
+#2 E:\www\jnc\backend\models\CreateTable.php(112): yii\db\Command->query()
+#3 E:\www\jnc\backend\controllers\FiledController.php(58): backend\models\CreateTable->updateColumn('<span class="st...', Object(backend\models\SlFiled), '<span class="st...')
+#4 [internal function]: backend\controllers\FiledController->actionEdit('<span class="st...', '<span class="st...')
+#5 E:\www\jnc\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#6 E:\www\jnc\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams('[<span class="s...')
+#7 E:\www\jnc\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#8 E:\www\jnc\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#9 E:\www\jnc\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 E:\www\jnc\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'tianjiashijian' in 'sl_user'
+)
+";i:1;i:1;i:2;s:16:"yii\db\Exception";i:3;d:1513764941.8046939;i:4;a:0:{}i:5;i:5071912;}i:49;a:6:{i:0;s:84:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/exception.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.8065;i:4;a:0:{}i:5;i:5165896;}i:50;a:6:{i:0;s:92:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/previousException.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.807482;i:4;a:0:{}i:5;i:5236264;}i:51;a:6:{i:0;s:88:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.8084829;i:4;a:0:{}i:5;i:5343896;}i:52;a:6:{i:0;s:88:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.8100741;i:4;a:0:{}i:5;i:5401792;}i:53;a:6:{i:0;s:88:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.811491;i:4;a:0:{}i:5;i:5405592;}i:54;a:6:{i:0;s:88:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.813612;i:4;a:0:{}i:5;i:5266464;}i:55;a:6:{i:0;s:88:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.8147891;i:4;a:0:{}i:5;i:5266936;}i:56;a:6:{i:0;s:88:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.8157029;i:4;a:0:{}i:5;i:5257176;}i:57;a:6:{i:0;s:88:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.816659;i:4;a:0:{}i:5;i:5266400;}i:58;a:6:{i:0;s:88:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.81796;i:4;a:0:{}i:5;i:5334016;}i:59;a:6:{i:0;s:88:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.819643;i:4;a:0:{}i:5;i:5365280;}i:60;a:6:{i:0;s:88:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.820765;i:4;a:0:{}i:5;i:5293256;}i:61;a:6:{i:0;s:88:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.8218551;i:4;a:0:{}i:5;i:5361800;}i:62;a:6:{i:0;s:88:"Rendering view file: E:\www\jnc\vendor\yiisoft\yii2/views/errorHandler/callStackItem.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1513764941.8228021;i:4;a:0:{}i:5;i:5276176;}}}";s:9:"profiling";s:12593:"a:3:{s:6:"memory";i:5933392;s:4:"time";d:0.14869093894958496;s:8:"messages";a:22:{i:16;a:6:{i:0;s:54:"Opening DB connection: mysql:host=127.0.0.1;dbname=jnc";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1513764941.75192;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4609088;}i:17;a:6:{i:0;s:54:"Opening DB connection: mysql:host=127.0.0.1;dbname=jnc";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1513764941.7540669;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4617704;}i:19;a:6:{i:0;s:40:"SELECT * FROM `sl_filed` WHERE `id`='11'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7542839;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4616264;}i:20;a:6:{i:0;s:40:"SELECT * FROM `sl_filed` WHERE `id`='11'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.754962;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4619536;}i:22;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `sl_filed`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.755743;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4639144;}i:23;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `sl_filed`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7660711;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4655352;}i:25;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_filed' AND kcu.table_name = 'sl_filed'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7680681;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4669480;}i:26;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_filed' AND kcu.table_name = 'sl_filed'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.770412;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4671216;}i:28;a:6:{i:0;s:41:"SELECT * FROM `sl_moxing` WHERE `id`='94'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.776926;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4925536;}i:29;a:6:{i:0;s:41:"SELECT * FROM `sl_moxing` WHERE `id`='94'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.777416;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4928056;}i:31;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `sl_moxing`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.777601;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4936992;}i:32;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `sl_moxing`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.787555;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4947168;}i:34;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_moxing' AND kcu.table_name = 'sl_moxing'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7881629;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4949416;}i:35;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_moxing' AND kcu.table_name = 'sl_moxing'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.789542;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4951152;}i:37;a:6:{i:0;s:48:"SELECT * FROM `sl_canshu` WHERE `u1`='文本框'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.79128;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5019608;}i:38;a:6:{i:0;s:48:"SELECT * FROM `sl_canshu` WHERE `u1`='文本框'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7916889;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5022752;}i:40;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `sl_canshu`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7918601;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5033208;}i:41;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `sl_canshu`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.8016281;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5042896;}i:43;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_canshu' AND kcu.table_name = 'sl_canshu'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.8020561;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5047128;}i:44;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_canshu' AND kcu.table_name = 'sl_canshu'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.8033161;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5049608;}i:46;a:6:{i:0;s:118:"ALTER TABLE `sl_user` CHANGE COLUMN `tianjiashijian` `tianjiashijian`  varchar(255)  NOT NULL  COMMENT '添加时间';";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.803546;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:112;s:8:"function";s:5:"query";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5041616;}i:47;a:6:{i:0;s:118:"ALTER TABLE `sl_user` CHANGE COLUMN `tianjiashijian` `tianjiashijian`  varchar(255)  NOT NULL  COMMENT '添加时间';";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.8040161;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:112;s:8:"function";s:5:"query";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5056008;}}}";s:2:"db";s:11825:"a:1:{s:8:"messages";a:20:{i:19;a:6:{i:0;s:40:"SELECT * FROM `sl_filed` WHERE `id`='11'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7542839;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4616264;}i:20;a:6:{i:0;s:40:"SELECT * FROM `sl_filed` WHERE `id`='11'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.754962;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4619536;}i:22;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `sl_filed`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.755743;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4639144;}i:23;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `sl_filed`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7660711;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4655352;}i:25;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_filed' AND kcu.table_name = 'sl_filed'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7680681;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4669480;}i:26;a:6:{i:0;s:603:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_filed' AND kcu.table_name = 'sl_filed'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.770412;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:4671216;}i:28;a:6:{i:0;s:41:"SELECT * FROM `sl_moxing` WHERE `id`='94'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.776926;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4925536;}i:29;a:6:{i:0;s:41:"SELECT * FROM `sl_moxing` WHERE `id`='94'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.777416;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4928056;}i:31;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `sl_moxing`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.777601;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4936992;}i:32;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `sl_moxing`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.787555;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4947168;}i:34;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_moxing' AND kcu.table_name = 'sl_moxing'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7881629;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4949416;}i:35;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_moxing' AND kcu.table_name = 'sl_moxing'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.789542;i:4;a:1:{i:0;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:53;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:4951152;}i:37;a:6:{i:0;s:48:"SELECT * FROM `sl_canshu` WHERE `u1`='文本框'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.79128;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5019608;}i:38;a:6:{i:0;s:48:"SELECT * FROM `sl_canshu` WHERE `u1`='文本框'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7916889;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5022752;}i:40;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `sl_canshu`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.7918601;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5033208;}i:41;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `sl_canshu`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.8016281;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5042896;}i:43;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_canshu' AND kcu.table_name = 'sl_canshu'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.8020561;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5047128;}i:44;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'sl_canshu' AND kcu.table_name = 'sl_canshu'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.8033161;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:107;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5049608;}i:46;a:6:{i:0;s:118:"ALTER TABLE `sl_user` CHANGE COLUMN `tianjiashijian` `tianjiashijian`  varchar(255)  NOT NULL  COMMENT '添加时间';";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.803546;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:112;s:8:"function";s:5:"query";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5041616;}i:47;a:6:{i:0;s:118:"ALTER TABLE `sl_user` CHANGE COLUMN `tianjiashijian` `tianjiashijian`  varchar(255)  NOT NULL  COMMENT '添加时间';";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1513764941.8040161;i:4;a:2:{i:0;a:5:{s:4:"file";s:41:"E:\www\jnc\backend\models\CreateTable.php";s:4:"line";i:112;s:8:"function";s:5:"query";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:50:"E:\www\jnc\backend\controllers\FiledController.php";s:4:"line";i:58;s:8:"function";s:12:"updateColumn";s:5:"class";s:26:"backend\models\CreateTable";s:4:"type";s:2:"->";}}i:5;i:5056008;}}}";s:6:"assets";s:6:"a:0:{}";s:4:"mail";s:6:"a:0:{}";s:8:"timeline";s:93:"a:3:{s:5:"start";d:1513764941.6998601;s:3:"end";d:1513764941.8491459;s:6:"memory";i:5933392;}";s:4:"user";s:2:"N;";s:6:"router";s:1161:"a:1:{s:8:"messages";a:6:{i:6;a:6:{i:0;a:3:{s:4:"rule";s:3:"gii";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1513764941.734004;i:4;a:0:{}i:5;i:3071864;}i:7;a:6:{i:0;a:3:{s:4:"rule";s:12:"gii/<id:\w+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1513764941.7340319;i:4;a:0:{}i:5;i:3072904;}i:8;a:6:{i:0;a:3:{s:4:"rule";s:41:"gii/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1513764941.73405;i:4;a:0:{}i:5;i:3073984;}i:9;a:6:{i:0;a:3:{s:4:"rule";s:5:"debug";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1513764941.7340679;i:4;a:0:{}i:5;i:3075056;}i:10;a:6:{i:0;a:3:{s:4:"rule";s:43:"debug/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1513764941.7340851;i:4;a:0:{}i:5;i:3076136;}i:11;a:6:{i:0;s:55:"No matching URL rules. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1513764941.7340961;i:4;a:0:{}i:5;i:3076832;}}}";s:7:"summary";a:9:{s:3:"tag";s:13:"5a3a384db1f84";s:3:"url";s:47:"http://www.jnc.com/filed/edit?model_id=94&id=11";s:4:"ajax";i:0;s:6:"method";s:4:"POST";s:2:"ip";s:9:"127.0.0.1";s:4:"time";d:1513764941.691087;s:10:"statusCode";i:500;s:8:"sqlCount";i:10;s:9:"mailCount";i:0;}s:10:"exceptions";a:0:{}}
