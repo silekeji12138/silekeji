@@ -148,7 +148,9 @@
         </div>
         <form method="post" action="<?=\yii\helpers\Url::to(['sign/index'])?>">
             <div class="search-box">
+                <?php if ($rule['ss']=='1'){ ?>
                 <input type="text" placeholder="请输入编号/名称" name="ss"><a><button style="width: 100px;height: 40px;background-color: transparent;border-color: transparent">搜索</button></a>
+                <?php }?>
             </div>
         </form>
     </div>

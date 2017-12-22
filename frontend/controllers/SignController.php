@@ -51,7 +51,7 @@ class SignController extends Controller{
            $request=\Yii::$app->request;
            if ($request->isPost){
                $id=$_POST['ss']; //搜索功能的条件
-               $model=Sign::find()->where(['like','title',$id])->orWhere(['like','id',$id])->orderBy($order)->where(['action_id'=>39])->all();
+               $model=Sign::find()->where(['like','title',$id])->orWhere(['like','id',$id])->orderBy($order)->andWhere(['action_id'=>39])->all();
            }else{
                $model=Sign::find()->orderBy($order)->where(['action_id'=>39])->all();
            }
