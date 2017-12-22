@@ -21,8 +21,10 @@
     <![endif]-->
     <script src="/webupload/webuploader.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="/webupload/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="/a/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/jnc1/jquery-1/css/jquery.my-modal.1.1.winStyle.css" />
     <script type="text/javascript" src="/jnc1/jquery-1/js/jquery.my-modal.1.1.js"></script>
+    <script type="text/javascript" src="/a/js/bootstrap.js"></script>
 
 
     <title></title>
@@ -147,18 +149,12 @@
     <p class="silo_zw"></p>
     <!--当前位置 end-->
     <br />
-    <form action="<?=\yii\helpers\Url::to(['index/rule'])?>" method="post">
-    <table class="table table-info cs-table">
+    <form action="<?=\yii\helpers\Url::to(['index/rule','id'=>$_GET['id']])?>" method="post" class="form-inline">
+    <table class="table table-info cs-table ">
         <tr>
-            <th width="60">活动分类</th>
+            <th width="100">活动添加</th>
             <td>
                 <div class="">
-                    <select class="selectOption" style="width: 50px">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
 
                 </div>
                 <br>
@@ -167,69 +163,65 @@
         <tr>
             <th>列表标题</th>
             <td id="wo">
-                <a href="javascript:;" id="add"><b>+</b>添加栏目</a><br>
-                <?php foreach ($model as $v): ?>
-                <name id="<?=$v['id']?>'"><br><input class="input" type="text" name="edit" value="<?=$v['title']?>"><a href="javascript:;" name="del">-</a><a href="javascript:;" class="btn1" id="mo">+</a></name>
-                <?php endforeach; ?>
-            </td>
-        </tr>
-        <tr>
-            <th width="60">栏目图标</th>
-            <td>
-                <p class="marb-20"><a href="#" class="btn btn-blue"><em class="ficon  ficon-uploading"></em> 上传图片</a></p>
+                <a href="javascript:;" id="add" class="btn btn-info">添加栏目</a><br>
+                <?php if ($model){ ?>
+                    <?php foreach ($model as $v): ?>
+                        <name id="<?=$v['id']?>"><br><input class="input form-control" type="text" name="edit"  value="<?=$v['title']?>"><a href="javascript:;" name="del" ><p class="glyphicon glyphicon-minus"></p></a><a href="javascript:;" class="btn1" id="mo"><p class="glyphicon glyphicon-plus"></p></a></name>
+                    <?php endforeach; ?>
+                <?php } ?>
             </td>
         </tr>
         <tr>
             <th>分页状态</th>
             <td>
-                    开<input type="radio" name="fy"  value="1" <?=$rule['fy']==1?'checked':''?> />
-                    关<input type="radio" name="fy"  value="2" <?=$rule['fy']==2?'checked':''?>/>
+                    <label class="radio-inline"><input type="radio" name="fy"   value="1" <?=$rule['fy']==1?'checked':''?> />开</label>
+                    <label class="radio-inline"><input type="radio" name="fy"  value="2" <?=$rule['fy']==2?'checked':''?>/>关</label>
 
             </td>
         </tr>
         <tr>
             <th>搜索状态</th>
             <td>
-                开<input type="radio" name="ss" class="" value="1" <?=$rule['ss']==1?'checked':''?> />
-                关<input type="radio" name="ss" class="" value="2" <?=$rule['ss']==2?'checked':''?>/>
+                <label class="radio-inline"><input type="radio" name="ss" class="" value="1" <?=$rule['ss']==1?'checked':''?> />开</label>
+                <label class="radio-inline"><input type="radio" name="ss" class="" value="2" <?=$rule['ss']==2?'checked':''?>/>关</label>
             </td>
         </tr>
         <tr>
             <th>开始时间</th>
             <td>
-                <input type="date" name="start" class="input" value="<?=date('Y/m/d',$time['start'])?>"/>
+                <input type="date" name="start" class="input form-control" value="<?=date('Y/m/d',$time['start'])?>"/>
                 </a>
             </td>
         </tr>
         <tr>
             <th>结束时间</th>
             <td>
-                <input type="date" name="end" class="input" value="<?=date('Y/m/d',$time['end'])?>" />
+                <input type="date" name="end" class="input form-control" value="<?=date('Y/m/d',$time['end'])?>" />
             </td>
         </tr>
 
         <tr>
             <th>显示设置</th>
-        <tr><td>票数显示</td><td><label>开<input type="radio" value="1" name="p_x" <?=$rule['p_x']==1?'checked':''?>></label>&nbsp;<label>关<input type="radio" value="2" name="p_x" <?=$rule['p_x']==2?'checked':''?>></label></td></tr>
-        <tr><td>投票人次</td><td><label>开<input type="radio" value="1" name="t_x" <?=$rule['t_x']==1?'checked':''?>></label>&nbsp;<label>关<input type="radio" value="2" name="t_x" <?=$rule['t_x']==2?'checked':''?>></label></td></tr>
-        <tr><td>访问流量</td><td>开<input type="radio" value="1" name="l_x" <?=$rule['l_x']==1?'checked':''?>>&nbsp;关<input type="radio" value="2" name="l_x" <?=$rule['l_x']==2?'checked':''?>></td></tr>
+        <tr><td>票数显示</td><td><label class="radio-inline"><input type="radio" value="1" name="p_x" <?=$rule['p_x']==1?'checked':''?>>开</label>&nbsp;<label class="radio-inline"><input type="radio" value="2" name="p_x" <?=$rule['p_x']==2?'checked':''?>>关</label></td></tr>
+        <tr><td>投票人次</td><td><label class="radio-inline"><input type="radio" value="1" name="t_x" <?=$rule['t_x']==1?'checked':''?>>开</label>&nbsp;<label class="radio-inline"><input type="radio" value="2" name="t_x" <?=$rule['t_x']==2?'checked':''?>>关</label></td></tr>
+        <tr><td>访问流量</td><td><label class="radio-inline"><input type="radio" value="1" name="l_x" <?=$rule['l_x']==1?'checked':''?>>开</label>&nbsp;<label class="radio-inline"><input type="radio" value="2" name="l_x" <?=$rule['l_x']==2?'checked':''?>>关</label></td></tr>
         </tr>
 
         <tr>
             <th>验证码</th>
             <td>
-                不用验证<input type="radio" name="y_z" class="" value="1" <?=$rule['y_z']==1?'checked':''?> />&nbsp;
-                一般验证<input type="radio" name="y_z" class="" value="2" <?=$rule['y_z']==2?'checked':''?> />&nbsp;
-                手机验证<input type="radio" name="y_z" class="" value="3" <?=$rule['y_z']==3?'checked':''?> />
+                <label class="radio-inline"><input type="radio" name="y_z" class="" value="1" <?=$rule['y_z']==1?'checked':''?> />不用验证</label>
+                <label class="radio-inline"><input type="radio" name="y_z" class="" value="2" <?=$rule['y_z']==2?'checked':''?> />一般验证</label>
+                <label class="radio-inline"><input type="radio" name="y_z" class="" value="3" <?=$rule['y_z']==3?'checked':''?> />手机验证</label>
             </td>
         </tr>
 
         <tr>
             <th>排序方式</th>
             <td>
-                参与时间倒序<input type="radio" name="p_z" class="" value="1" <?=$rule['p_z']==1?'checked':''?>/>&nbsp;
-                投票数高到低<input type="radio" name="p_z" class="" value="2" <?=$rule['p_z']==2?'checked':''?>/>&nbsp;
-                编号从低到高<input type="radio" name="p_z" class="" value="3" <?=$rule['p_z']==3?'checked':''?> />
+                <label class="radio-inline"><input type="radio" name="p_z" class="" value="1" <?=$rule['p_z']==1?'checked':''?>/>参与时间倒序</label>
+                <label class="radio-inline"><input type="radio" name="p_z" class="" value="2" <?=$rule['p_z']==2?'checked':''?>/>投票数高到低</label>
+                <label class="radio-inline"><input type="radio" name="p_z" class="" value="3" <?=$rule['p_z']==3?'checked':''?> />编号从低到高</label>
             </td>
         </tr>
 
@@ -248,14 +240,21 @@
         <div class="m-modal-dialog">
             <div class="m-top">
                 <h4 class="m-modal-title">
-                    jQuery简介
+                    添加
                 </h4>
                 <span class="m-modal-close">&times;</span>
             </div>
             <div class="m-middle">
                 <!--content-->
-                <a id="o"><p style="color: red">添加图片</p></a><br>
-             <textarea id="info"></textarea>
+                <div id="uploader-demo" style="position: static">
+                    <div id="fileList" class="uploader-list"></div>
+                    <div id="o">图片添加</div>
+                </div>
+                <div><img id="img" width="135px"></div>
+<!--                <a id="o"><p style="color: red">添加图片</p></a><br>-->
+             参与者:<input id="join_person" class="form-control">
+             活动描述:<textarea id="info" class="form-control"></textarea>
+             图片故事:<textarea id="story" class="form-control"></textarea>
 
             </div>
             <div class="m-bottom">
@@ -287,15 +286,16 @@
         new WOW().init();
     };
     $('#add').click(function () {
-        $.getJSON("<?=\yii\helpers\Url::to(['index/add-sign'])?>",function (msg) {
-            $('<name id="'+msg.B+'"><br><input class="input" type="text" name="edit" id="'+msg.B+'" value="请输入标题"><a href="javascript:;" name="del" id="'+msg.B+'">-</a><a href="javascript:;" class="btn1" id="mo">+</a></name>').appendTo('#wo');
+        $.getJSON("<?=\yii\helpers\Url::to(['index/add-sign','id'=>$_GET['id']])?>",function (msg) {
+            $('<name id="'+msg.B+'"><br><input class="input form-control" type="text" name="edit" id="'+msg.B+'" value="请输入标题"><a href="javascript:;" name="del" id="'+msg.B+'"><p class="glyphicon glyphicon-minus"></p></a><a href="javascript:;" class="btn1" id="mo"><p class="glyphicon glyphicon-plus"></p></a></name>').appendTo('#wo');
         })
     });
 
     $('body').on('blur','input[name=edit]',function () {
         var id=this.closest('name').id;
         var title=this.value;
-        $.get("<?=\yii\helpers\Url::to(['index/edit-sign'])?>",{id:id,title:title});
+
+       $.get("<?=\yii\helpers\Url::to(['index/edit-sign'])?>",{id:id,title:title});
     });
 
     $('body').on('click','a[name=del]',function () {
@@ -311,7 +311,8 @@
         var id=this.closest('name').id;
         var m1 = new MyModal.modal(function() {
             var info=$('#info').val();
-             $.get("<?=\yii\helpers\Url::to(['index/info'])?>",{id:id,info:info})
+            var story=$('#story').val();
+             $.get("<?=\yii\helpers\Url::to(['index/info'])?>",{id:id,info:info,story:story})
         });
         m1.show();
 
@@ -326,14 +327,36 @@
                 mimeTypes: 'image/jpg,image/jpeg,image/png',
             }
         });
+//        uploader.on( 'fileQueued', function( file ) {
+//            var  list = $("#fileList"),
+//                li = $(
+//                    '<div id="' + file.id + '" class="file-item thumbnail">' +
+//                    '<img>' +
+//                    '<div class="info">' + file.name + '</div>' +
+//                    '</div>'
+//                ),
+//                img = li.find('img');
+//
+//
+//
+//            list.append( li );
+//
+//            // 创建缩略图
+//            uploader.makeThumb( file, function( error, src ) {
+//                if ( error ) {
+//                    img.replaceWith('<span>不能预览</span>');
+//                    return;
+//                }
+//
+//                img.attr( 'src', src );
+//            }, 100, 100 ); //100x100为缩略图尺寸
+//        });
         uploader.on( 'uploadSuccess', function( file,response ) {
             var url=response.url;
             $.post('add-photo',{url:url,id:id},function(msg) {
+                  uploader.destory();
             });
-            uploader.destory();
         });
-
-
     });
 
 

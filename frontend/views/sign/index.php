@@ -124,22 +124,22 @@
 <section>
     <div class="part-1">
         <ul class="infor">
-            <?php if ($rule[0]['t_x']==1){ ?>
+            <?php if ($rule['t_x']==1){ ?>
             <li>
                 参与者</br>
-                <?=$model2[0]['join_num']?>
+                <?=$model2['join_num']?>
             </li>
             <?php } ;?>
-            <?php if ($rule[0]['p_x']==1){ ?>
+            <?php if ($rule['p_x']==1){ ?>
             <li>
                 投票数</br>
-                <?=$model2[0]['vote_num']?>
+                <?=$model2['vote_num']?>
             </li>
             <?php } ;?>
-            <?php if ($rule[0]['l_x']==1){ ?>
+            <?php if ($rule['l_x']==1){ ?>
             <li>
                 访问量</br>
-                <?=$model2[0]['view']?>
+                <?=$model2['view']?>
             </li>
             <?php } ;?>
         </ul>
@@ -294,7 +294,8 @@
          * 分割线
          */
         $.get("<?=\yii\helpers\Url::to(['index/check'])?>",function (msg) {
-            <?php if ($rule[0]['y_z']==1){?>
+            <?php if ($rule
+        ['y_z']==1){?>
              if (msg=='1'){
                  $('#shadowbox').show();
                  $('.pop2').show()
@@ -302,7 +303,7 @@
                  $('#shadowbox').show();
                  $('.pop1').show();
              }
-             <?php }elseif($rule[0]['y_z']==2){?>
+             <?php }elseif($rule['y_z']==2){?>
             $('#shadowbox').show();
             $('.pop3').show();
             <?php }else{ ?>

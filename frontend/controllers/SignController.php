@@ -29,13 +29,13 @@ class SignController extends Controller{
             return $this->render('sign');
        }
        public function actionIndex(){ //首页参加人数 访问人数 投票数量的显示
-           $rule=Rule::find()->asArray()->all(); //规则查询
+           $rule=Rule::find()->asArray()->where(['action_id'=>39])->one(); //规则查询
            /**
             * 排序根据
             */
-           if ($rule[0]['p_z']==1) {
+           if ($rule['p_z']==1) {
                $order = 'addtime DESC';
-           }elseif($rule[0]['p_z']==2){
+           }elseif($rule['p_z']==2){
                $order = 'vote_num DESC';
            }else{
                $order='number ASC';
@@ -47,13 +47,13 @@ class SignController extends Controller{
            $name=implode('',$type);
            $array=explode(',',$name);
            $time=\frontend\models\Action::find()->select(['end'])->one(); //结束时间的查询
-           $model2=Action1::find()->select(['vote_num','view','join_num'])->where(['action_id'=>1])->asArray()->all();
+           $model2=Action1::find()->select(['vote_num','view','join_num'])->where(['action_id'=>1])->asArray()->one();
            $request=\Yii::$app->request;
            if ($request->isPost){
                $id=$_POST['ss']; //搜索功能的条件
-               $model=Sign::find()->where(['like','title',$id])->orWhere(['like','id',$id])->orderBy($order)->all();
+               $model=Sign::find()->where(['like','title',$id])->orWhere(['like','id',$id])->orderBy($order)->where(['action_id'=>39])->all();
            }else{
-               $model=Sign::find()->orderBy($order)->all();
+               $model=Sign::find()->orderBy($order)->where(['action_id'=>39])->all();
            }
            return $this->render('index',compact('model','model2','time','array','rule'));
        }

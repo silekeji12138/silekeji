@@ -145,11 +145,11 @@
         <tr>
             <th width="60">活动标题</th>
             <td>
-                <input type="text" class="input" id="title" value="5654"/>
+                <input type="text" class="input" id="title" value=""/>
             </td>
         </tr>
         <tr>
-            <th>活动描述</th>
+            <th>活动规则</th>
             <td>
                 <div id="editor">
                     <p>你们好啊</p>
@@ -157,11 +157,11 @@
             </td>
         </tr>
         <tr>
-            <th>活动描述</th>
+            <th>活动分类</th>
             <td>
-                <div id="editor1" name="l1">
-                    <p>你们好啊</p>
-                </div>
+                <input value="活动分类" id="1" >
+
+                </input>
             </td>
         </tr>
 
@@ -169,7 +169,7 @@
         <tr>
             <th></th>
             <td>
-                <a href="#" class="btn btn-blue" id="btn1"><em class="ficon ficon-queren"></em> 确认操作</a>&nbsp;&nbsp;
+                <a href="<?=\yii\helpers\Url::to(['index/add-action'])?>" class="btn btn-blue" id="btn1"><em class="ficon ficon-queren"></em> 确认操作</a>&nbsp;&nbsp;
                 <a href="#" class="btn btn-green"><em class="ficon ficon-shanchu"></em> 清空重填</a>
             </td>
         </tr>
@@ -203,10 +203,9 @@
 
     document.getElementById('btn1').addEventListener('click', function () {
         var title=$('#title').val();
-        alert(editor.txt.html());
-        alert(editor1.txt.html());
-        alert(title);
-
+      var rule=editor.txt.html();
+      var type=$('#1').val();
+        $.get("<?=\yii\helpers\Url::to(['index/add-action'])?>",{title:title,rule:rule,type:type})
     }, false)
 
 </script>

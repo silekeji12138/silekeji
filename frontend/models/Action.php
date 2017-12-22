@@ -13,4 +13,13 @@ class Action extends  ActiveRecord{
     {
         return 'jnc_action';
     }
+
+    public function rules()
+    {
+        return [
+
+            [['title', 'type', 'rule'], 'required'],
+
+        ];
+    }
 }
