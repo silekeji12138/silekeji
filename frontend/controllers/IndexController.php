@@ -200,4 +200,19 @@ class IndexController extends Controller{
             echo '2';
         }
     }
+    /**
+     * 修改总活动
+     */
+    public function actionActionEdit($id){
+        $model=Action::findOne($id);
+        return $this->render('action1',compact('model'));
+    }
+    public function actionActionEdit1($id,$title='',$rule='',$type=''){
+        $model=Action::findOne($id);
+        $model->title=$title;
+        $model->rule=$rule;
+        $model->type=$type;
+        $model->save();
+        return $this->redirect("admin?id={$id}");
+    }
 }
